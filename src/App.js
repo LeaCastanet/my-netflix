@@ -1,6 +1,7 @@
 import "./App.css";
 import data from "./data.json";
 import Section from "./components/Section";
+import Header from "./components/Header";
 
 function App() {
   // const tab = data.map((elem) => {
@@ -13,9 +14,10 @@ function App() {
     //     })}
     //   </div>
     // </div>
-    <>
+    <div className="page">
+      <Header />
       <Section data={data} />
-    </>
+    </div>
   );
   // });
 

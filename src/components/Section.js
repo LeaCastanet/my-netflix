@@ -1,13 +1,13 @@
 const Section = ({ data }) => {
   return (
     <>
-      {data.map((elem) => {
+      {data.map((elem, index) => {
         return (
-          <div className="container">
+          <div key={index} className="container">
             <h1>{elem.category}</h1>;
             <div className="images">
-              {elem.images.map((moovie) => {
-                return <img src={moovie}></img>;
+              {elem.images.map((moovie, num) => {
+                return <img key={num} src={moovie}></img>;
               })}
             </div>
           </div>
